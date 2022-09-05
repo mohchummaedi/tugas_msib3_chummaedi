@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="data:image/png;base64,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">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Aorus Gaming</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  </head>
+  <body>
+
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<!--------------awal isi header------------------>
+						<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+			  <div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/monitor.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+    
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/pc.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+    
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/laptop.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+			<!--------------akhir isi header------------------>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<!--------------awal navigasi------------------->
+			<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Aorus GAMING</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"></i> Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://member.aorus.com/id/productwarranty" target="_blank"></i>Informasi Garansi </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Produk
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Motherboard</a></li>
+            <li><a class="dropdown-item" href="#">Laptop</a></li>
+            <li><a class="dropdown-item" href="#">Monitor</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">RGB Fusion 2.0</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+			<!--------------akhir navigasi------------------>
+		</div>
+	</div>
+	<br/>
+	<div class="row">
+		<div class="col-md-3">
+      <div class="list-group">
+			  <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
+				Menu
+			  </button>
+			  <button type="button" class="list-group-item list-group-item-action">Berita</button>
+			  <button type="button" class="list-group-item list-group-item-action">Acara</button>
+			  <button type="button" class="list-group-item list-group-item-action">Blog</button>
+        <button type="button" class="list-group-item list-group-item-action">FAQ</button>
+			</div>
+		</div>
+		<div class="col-md-6">
+      <div class="card">
+				<div class="card-body">
+					<div class="jumbotron">
+					  <h5 class="card-title">Gaming Gear</h5>
+					  <p class="lead">Aorus adalah perusahaan terkemuka dalam motherboard, kartu grafis, laptop, perangkat keras game, dan sistem berkinerja tinggi. Kami bersemangat untuk bekerja sama dengan para gamer untuk menantang batas tanpa rasa takut dan berjuang saat kami naik ke kejayaan tertinggi!</p>
+					  <hr class="my-4">
+					  <p>Temukan inspirasi pembuatan PC, kiat DIY, trik permainan, acara AORUS di seluruh dunia, dan banyak lagi.
+            </p>
+					  <a class="btn btn-primary btn-sm" href="#" role="button"><i class="bi-signpost"></i></a>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div class="col-md-3">
+          <p class="lead"><iframe width="460" height="215" src="https://www.youtube-nocookie.com/embed/rV8bYZV0U1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+		</div>
+	</div>
+	<br/>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="alert alert-primary" role="alert">
+			  Design By: @Chummaedi - 2022
+			</div>
+		</div>
+	</div>
+</div>
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
